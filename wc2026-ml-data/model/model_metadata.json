@@ -1,0 +1,53 @@
+{
+  "feature_names": [
+    "home",
+    "is_friendly",
+    "team_elo",
+    "opp_elo",
+    "elo_diff",
+    "team_rank",
+    "opp_rank",
+    "rank_diff",
+    "team_points",
+    "opp_points",
+    "points_diff"
+  ],
+  "class_names": [
+    "loss",
+    "draw",
+    "win"
+  ],
+  "n_games_per_team": 20,
+  "include_friendly": true,
+  "n_test_per_team": 2,
+  "metrics": {
+    "accuracy": 0.5833333333333334,
+    "roc_auc": 0.779188429227354,
+    "n_train": 864,
+    "n_test": 96,
+    "n_games_per_team": 20,
+    "include_friendly": true,
+    "n_test_per_team": 2
+  },
+  "hosts": [
+    "Mexico",
+    "USA",
+    "Canada"
+  ],
+  "aliases": {
+    "USA": "United States",
+    "USMNT": "United States",
+    "United States of America": "United States",
+    "Korea Republic": "South Korea",
+    "Republic of Korea": "South Korea",
+    "C\u00f4te d'Ivoire": "Ivory Coast",
+    "Cote d'Ivoire": "Ivory Coast",
+    "Cabo Verde": "Cape Verde",
+    "IR Iran": "Iran",
+    "Turkey": "T\u00fcrkiye",
+    "Czechia": "Czech Republic",
+    "Democratic Republic of the Congo": "DR Congo",
+    "D. R. Congo": "DR Congo",
+    "Congo DR": "DR Congo"
+  }
+}

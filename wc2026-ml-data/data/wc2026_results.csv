@@ -1,0 +1,177 @@
+date,country,home_away,wc_team_score,opposition_score,result,match_type,opposition_country,home_team,away_team,tournament
+2026-06-11,Mexico,home,2,0,win,competitive,South Africa,Mexico,South Africa,FIFA World Cup 2026
+2026-06-11,South Africa,away,0,2,loss,competitive,Mexico,Mexico,South Africa,FIFA World Cup 2026
+2026-06-11,South Korea,home,2,1,win,competitive,Czech Republic,South Korea,Czech Republic,FIFA World Cup 2026
+2026-06-11,Czech Republic,away,1,2,loss,competitive,South Korea,South Korea,Czech Republic,FIFA World Cup 2026
+2026-06-18,Czech Republic,home,1,1,draw,competitive,South Africa,Czech Republic,South Africa,FIFA World Cup 2026
+2026-06-18,South Africa,away,1,1,draw,competitive,Czech Republic,Czech Republic,South Africa,FIFA World Cup 2026
+2026-06-18,Mexico,home,1,0,win,competitive,South Korea,Mexico,South Korea,FIFA World Cup 2026
+2026-06-18,South Korea,away,0,1,loss,competitive,Mexico,Mexico,South Korea,FIFA World Cup 2026
+2026-06-24,Mexico,home,3,0,win,competitive,Czech Republic,Mexico,Czech Republic,FIFA World Cup 2026
+2026-06-24,Czech Republic,away,0,3,loss,competitive,Mexico,Mexico,Czech Republic,FIFA World Cup 2026
+2026-06-24,South Africa,home,1,0,win,competitive,South Korea,South Africa,South Korea,FIFA World Cup 2026
+2026-06-24,South Korea,away,0,1,loss,competitive,South Africa,South Africa,South Korea,FIFA World Cup 2026
+2026-06-12,Canada,home,1,1,draw,competitive,Bosnia and Herzegovina,Canada,Bosnia and Herzegovina,FIFA World Cup 2026
+2026-06-12,Bosnia and Herzegovina,away,1,1,draw,competitive,Canada,Canada,Bosnia and Herzegovina,FIFA World Cup 2026
+2026-06-13,Qatar,home,1,1,draw,competitive,Switzerland,Qatar,Switzerland,FIFA World Cup 2026
+2026-06-13,Switzerland,away,1,1,draw,competitive,Qatar,Qatar,Switzerland,FIFA World Cup 2026
+2026-06-18,Switzerland,home,4,1,win,competitive,Bosnia and Herzegovina,Switzerland,Bosnia and Herzegovina,FIFA World Cup 2026
+2026-06-18,Bosnia and Herzegovina,away,1,4,loss,competitive,Switzerland,Switzerland,Bosnia and Herzegovina,FIFA World Cup 2026
+2026-06-18,Canada,home,6,0,win,competitive,Qatar,Canada,Qatar,FIFA World Cup 2026
+2026-06-18,Qatar,away,0,6,loss,competitive,Canada,Canada,Qatar,FIFA World Cup 2026
+2026-06-24,Switzerland,home,2,1,win,competitive,Canada,Switzerland,Canada,FIFA World Cup 2026
+2026-06-24,Canada,away,1,2,loss,competitive,Switzerland,Switzerland,Canada,FIFA World Cup 2026
+2026-06-24,Bosnia and Herzegovina,home,3,1,win,competitive,Qatar,Bosnia and Herzegovina,Qatar,FIFA World Cup 2026
+2026-06-24,Qatar,away,1,3,loss,competitive,Bosnia and Herzegovina,Bosnia and Herzegovina,Qatar,FIFA World Cup 2026
+2026-06-13,Haiti,home,0,1,loss,competitive,Scotland,Haiti,Scotland,FIFA World Cup 2026
+2026-06-13,Scotland,away,1,0,win,competitive,Haiti,Haiti,Scotland,FIFA World Cup 2026
+2026-06-13,Brazil,home,1,1,draw,competitive,Morocco,Brazil,Morocco,FIFA World Cup 2026
+2026-06-13,Morocco,away,1,1,draw,competitive,Brazil,Brazil,Morocco,FIFA World Cup 2026
+2026-06-19,Brazil,home,3,0,win,competitive,Haiti,Brazil,Haiti,FIFA World Cup 2026
+2026-06-19,Haiti,away,0,3,loss,competitive,Brazil,Brazil,Haiti,FIFA World Cup 2026
+2026-06-19,Scotland,home,0,1,loss,competitive,Morocco,Scotland,Morocco,FIFA World Cup 2026
+2026-06-19,Morocco,away,1,0,win,competitive,Scotland,Scotland,Morocco,FIFA World Cup 2026
+2026-06-24,Scotland,home,0,3,loss,competitive,Brazil,Scotland,Brazil,FIFA World Cup 2026
+2026-06-24,Brazil,away,3,0,win,competitive,Scotland,Scotland,Brazil,FIFA World Cup 2026
+2026-06-24,Morocco,home,4,2,win,competitive,Haiti,Morocco,Haiti,FIFA World Cup 2026
+2026-06-24,Haiti,away,2,4,loss,competitive,Morocco,Morocco,Haiti,FIFA World Cup 2026
+2026-06-12,United States,home,4,1,win,competitive,Paraguay,United States,Paraguay,FIFA World Cup 2026
+2026-06-12,Paraguay,away,1,4,loss,competitive,United States,United States,Paraguay,FIFA World Cup 2026
+2026-06-13,Australia,home,2,0,win,competitive,Türkiye,Australia,Türkiye,FIFA World Cup 2026
+2026-06-13,Türkiye,away,0,2,loss,competitive,Australia,Australia,Türkiye,FIFA World Cup 2026
+2026-06-19,United States,home,2,0,win,competitive,Australia,United States,Australia,FIFA World Cup 2026
+2026-06-19,Australia,away,0,2,loss,competitive,United States,United States,Australia,FIFA World Cup 2026
+2026-06-19,Türkiye,home,0,1,loss,competitive,Paraguay,Türkiye,Paraguay,FIFA World Cup 2026
+2026-06-19,Paraguay,away,1,0,win,competitive,Türkiye,Türkiye,Paraguay,FIFA World Cup 2026
+2026-06-25,Türkiye,home,3,2,win,competitive,United States,Türkiye,United States,FIFA World Cup 2026
+2026-06-25,United States,away,2,3,loss,competitive,Türkiye,Türkiye,United States,FIFA World Cup 2026
+2026-06-25,Paraguay,home,0,0,draw,competitive,Australia,Paraguay,Australia,FIFA World Cup 2026
+2026-06-25,Australia,away,0,0,draw,competitive,Paraguay,Paraguay,Australia,FIFA World Cup 2026
+2026-06-14,Ivory Coast,home,1,0,win,competitive,Ecuador,Ivory Coast,Ecuador,FIFA World Cup 2026
+2026-06-14,Ecuador,away,0,1,loss,competitive,Ivory Coast,Ivory Coast,Ecuador,FIFA World Cup 2026
+2026-06-14,Germany,home,7,1,win,competitive,Curaçao,Germany,Curaçao,FIFA World Cup 2026
+2026-06-14,Curaçao,away,1,7,loss,competitive,Germany,Germany,Curaçao,FIFA World Cup 2026
+2026-06-20,Germany,home,2,1,win,competitive,Ivory Coast,Germany,Ivory Coast,FIFA World Cup 2026
+2026-06-20,Ivory Coast,away,1,2,loss,competitive,Germany,Germany,Ivory Coast,FIFA World Cup 2026
+2026-06-20,Ecuador,home,0,0,draw,competitive,Curaçao,Ecuador,Curaçao,FIFA World Cup 2026
+2026-06-20,Curaçao,away,0,0,draw,competitive,Ecuador,Ecuador,Curaçao,FIFA World Cup 2026
+2026-06-25,Ecuador,home,2,1,win,competitive,Germany,Ecuador,Germany,FIFA World Cup 2026
+2026-06-25,Germany,away,1,2,loss,competitive,Ecuador,Ecuador,Germany,FIFA World Cup 2026
+2026-06-25,Curaçao,home,0,2,loss,competitive,Ivory Coast,Curaçao,Ivory Coast,FIFA World Cup 2026
+2026-06-25,Ivory Coast,away,2,0,win,competitive,Curaçao,Curaçao,Ivory Coast,FIFA World Cup 2026
+2026-06-14,Netherlands,home,2,2,draw,competitive,Japan,Netherlands,Japan,FIFA World Cup 2026
+2026-06-14,Japan,away,2,2,draw,competitive,Netherlands,Netherlands,Japan,FIFA World Cup 2026
+2026-06-14,Sweden,home,5,1,win,competitive,Tunisia,Sweden,Tunisia,FIFA World Cup 2026
+2026-06-14,Tunisia,away,1,5,loss,competitive,Sweden,Sweden,Tunisia,FIFA World Cup 2026
+2026-06-20,Netherlands,home,5,1,win,competitive,Sweden,Netherlands,Sweden,FIFA World Cup 2026
+2026-06-20,Sweden,away,1,5,loss,competitive,Netherlands,Netherlands,Sweden,FIFA World Cup 2026
+2026-06-20,Tunisia,home,0,4,loss,competitive,Japan,Tunisia,Japan,FIFA World Cup 2026
+2026-06-20,Japan,away,4,0,win,competitive,Tunisia,Tunisia,Japan,FIFA World Cup 2026
+2026-06-25,Japan,home,1,1,draw,competitive,Sweden,Japan,Sweden,FIFA World Cup 2026
+2026-06-25,Sweden,away,1,1,draw,competitive,Japan,Japan,Sweden,FIFA World Cup 2026
+2026-06-25,Tunisia,home,1,3,loss,competitive,Netherlands,Tunisia,Netherlands,FIFA World Cup 2026
+2026-06-25,Netherlands,away,3,1,win,competitive,Tunisia,Tunisia,Netherlands,FIFA World Cup 2026
+2026-06-15,Iran,home,2,2,draw,competitive,New Zealand,Iran,New Zealand,FIFA World Cup 2026
+2026-06-15,New Zealand,away,2,2,draw,competitive,Iran,Iran,New Zealand,FIFA World Cup 2026
+2026-06-15,Belgium,home,1,1,draw,competitive,Egypt,Belgium,Egypt,FIFA World Cup 2026
+2026-06-15,Egypt,away,1,1,draw,competitive,Belgium,Belgium,Egypt,FIFA World Cup 2026
+2026-06-21,Belgium,home,0,0,draw,competitive,Iran,Belgium,Iran,FIFA World Cup 2026
+2026-06-21,Iran,away,0,0,draw,competitive,Belgium,Belgium,Iran,FIFA World Cup 2026
+2026-06-21,New Zealand,home,1,3,loss,competitive,Egypt,New Zealand,Egypt,FIFA World Cup 2026
+2026-06-21,Egypt,away,3,1,win,competitive,New Zealand,New Zealand,Egypt,FIFA World Cup 2026
+2026-06-26,Egypt,home,1,1,draw,competitive,Iran,Egypt,Iran,FIFA World Cup 2026
+2026-06-26,Iran,away,1,1,draw,competitive,Egypt,Egypt,Iran,FIFA World Cup 2026
+2026-06-26,New Zealand,home,1,5,loss,competitive,Belgium,New Zealand,Belgium,FIFA World Cup 2026
+2026-06-26,Belgium,away,5,1,win,competitive,New Zealand,New Zealand,Belgium,FIFA World Cup 2026
+2026-06-15,Saudi Arabia,home,1,1,draw,competitive,Uruguay,Saudi Arabia,Uruguay,FIFA World Cup 2026
+2026-06-15,Uruguay,away,1,1,draw,competitive,Saudi Arabia,Saudi Arabia,Uruguay,FIFA World Cup 2026
+2026-06-15,Spain,home,0,0,draw,competitive,Cape Verde,Spain,Cape Verde,FIFA World Cup 2026
+2026-06-15,Cape Verde,away,0,0,draw,competitive,Spain,Spain,Cape Verde,FIFA World Cup 2026
+2026-06-21,Uruguay,home,2,2,draw,competitive,Cape Verde,Uruguay,Cape Verde,FIFA World Cup 2026
+2026-06-21,Cape Verde,away,2,2,draw,competitive,Uruguay,Uruguay,Cape Verde,FIFA World Cup 2026
+2026-06-21,Spain,home,4,0,win,competitive,Saudi Arabia,Spain,Saudi Arabia,FIFA World Cup 2026
+2026-06-21,Saudi Arabia,away,0,4,loss,competitive,Spain,Spain,Saudi Arabia,FIFA World Cup 2026
+2026-06-26,Cape Verde,home,0,0,draw,competitive,Saudi Arabia,Cape Verde,Saudi Arabia,FIFA World Cup 2026
+2026-06-26,Saudi Arabia,away,0,0,draw,competitive,Cape Verde,Cape Verde,Saudi Arabia,FIFA World Cup 2026
+2026-06-26,Uruguay,home,0,1,loss,competitive,Spain,Uruguay,Spain,FIFA World Cup 2026
+2026-06-26,Spain,away,1,0,win,competitive,Uruguay,Uruguay,Spain,FIFA World Cup 2026
+2026-06-16,France,home,3,1,win,competitive,Senegal,France,Senegal,FIFA World Cup 2026
+2026-06-16,Senegal,away,1,3,loss,competitive,France,France,Senegal,FIFA World Cup 2026
+2026-06-16,Iraq,home,1,4,loss,competitive,Norway,Iraq,Norway,FIFA World Cup 2026
+2026-06-16,Norway,away,4,1,win,competitive,Iraq,Iraq,Norway,FIFA World Cup 2026
+2026-06-22,France,home,3,0,win,competitive,Iraq,France,Iraq,FIFA World Cup 2026
+2026-06-22,Iraq,away,0,3,loss,competitive,France,France,Iraq,FIFA World Cup 2026
+2026-06-22,Norway,home,3,2,win,competitive,Senegal,Norway,Senegal,FIFA World Cup 2026
+2026-06-22,Senegal,away,2,3,loss,competitive,Norway,Norway,Senegal,FIFA World Cup 2026
+2026-06-26,Norway,home,1,4,loss,competitive,France,Norway,France,FIFA World Cup 2026
+2026-06-26,France,away,4,1,win,competitive,Norway,Norway,France,FIFA World Cup 2026
+2026-06-26,Senegal,home,5,0,win,competitive,Iraq,Senegal,Iraq,FIFA World Cup 2026
+2026-06-26,Iraq,away,0,5,loss,competitive,Senegal,Senegal,Iraq,FIFA World Cup 2026
+2026-06-16,Argentina,home,3,0,win,competitive,Algeria,Argentina,Algeria,FIFA World Cup 2026
+2026-06-16,Algeria,away,0,3,loss,competitive,Argentina,Argentina,Algeria,FIFA World Cup 2026
+2026-06-16,Austria,home,3,1,win,competitive,Jordan,Austria,Jordan,FIFA World Cup 2026
+2026-06-16,Jordan,away,1,3,loss,competitive,Austria,Austria,Jordan,FIFA World Cup 2026
+2026-06-22,Argentina,home,2,0,win,competitive,Austria,Argentina,Austria,FIFA World Cup 2026
+2026-06-22,Austria,away,0,2,loss,competitive,Argentina,Argentina,Austria,FIFA World Cup 2026
+2026-06-22,Jordan,home,1,2,loss,competitive,Algeria,Jordan,Algeria,FIFA World Cup 2026
+2026-06-22,Algeria,away,2,1,win,competitive,Jordan,Jordan,Algeria,FIFA World Cup 2026
+2026-06-27,Algeria,home,3,3,draw,competitive,Austria,Algeria,Austria,FIFA World Cup 2026
+2026-06-27,Austria,away,3,3,draw,competitive,Algeria,Algeria,Austria,FIFA World Cup 2026
+2026-06-27,Jordan,home,1,3,loss,competitive,Argentina,Jordan,Argentina,FIFA World Cup 2026
+2026-06-27,Argentina,away,3,1,win,competitive,Jordan,Jordan,Argentina,FIFA World Cup 2026
+2026-06-17,Portugal,home,1,1,draw,competitive,DR Congo,Portugal,DR Congo,FIFA World Cup 2026
+2026-06-17,DR Congo,away,1,1,draw,competitive,Portugal,Portugal,DR Congo,FIFA World Cup 2026
+2026-06-17,Uzbekistan,home,1,3,loss,competitive,Colombia,Uzbekistan,Colombia,FIFA World Cup 2026
+2026-06-17,Colombia,away,3,1,win,competitive,Uzbekistan,Uzbekistan,Colombia,FIFA World Cup 2026
+2026-06-23,Portugal,home,5,0,win,competitive,Uzbekistan,Portugal,Uzbekistan,FIFA World Cup 2026
+2026-06-23,Uzbekistan,away,0,5,loss,competitive,Portugal,Portugal,Uzbekistan,FIFA World Cup 2026
+2026-06-23,Colombia,home,1,0,win,competitive,DR Congo,Colombia,DR Congo,FIFA World Cup 2026
+2026-06-23,DR Congo,away,0,1,loss,competitive,Colombia,Colombia,DR Congo,FIFA World Cup 2026
+2026-06-27,Colombia,home,0,0,draw,competitive,Portugal,Colombia,Portugal,FIFA World Cup 2026
+2026-06-27,Portugal,away,0,0,draw,competitive,Colombia,Colombia,Portugal,FIFA World Cup 2026
+2026-06-27,DR Congo,home,3,1,win,competitive,Uzbekistan,DR Congo,Uzbekistan,FIFA World Cup 2026
+2026-06-27,Uzbekistan,away,1,3,loss,competitive,DR Congo,DR Congo,Uzbekistan,FIFA World Cup 2026
+2026-06-17,Ghana,home,2,1,win,competitive,Panama,Ghana,Panama,FIFA World Cup 2026
+2026-06-17,Panama,away,1,2,loss,competitive,Ghana,Ghana,Panama,FIFA World Cup 2026
+2026-06-17,England,home,3,2,win,competitive,Croatia,England,Croatia,FIFA World Cup 2026
+2026-06-17,Croatia,away,2,3,loss,competitive,England,England,Croatia,FIFA World Cup 2026
+2026-06-23,England,home,0,0,draw,competitive,Ghana,England,Ghana,FIFA World Cup 2026
+2026-06-23,Ghana,away,0,0,draw,competitive,England,England,Ghana,FIFA World Cup 2026
+2026-06-23,Panama,home,0,1,loss,competitive,Croatia,Panama,Croatia,FIFA World Cup 2026
+2026-06-23,Croatia,away,1,0,win,competitive,Panama,Panama,Croatia,FIFA World Cup 2026
+2026-06-27,Panama,home,0,4,loss,competitive,England,Panama,England,FIFA World Cup 2026
+2026-06-27,England,away,4,0,win,competitive,Panama,Panama,England,FIFA World Cup 2026
+2026-06-27,Croatia,home,3,2,win,competitive,Ghana,Croatia,Ghana,FIFA World Cup 2026
+2026-06-27,Ghana,away,2,3,loss,competitive,Croatia,Croatia,Ghana,FIFA World Cup 2026
+2026-06-28,South Africa,home,0,1,loss,competitive,Canada,South Africa,Canada,FIFA World Cup 2026
+2026-06-28,Canada,away,1,0,win,competitive,South Africa,South Africa,Canada,FIFA World Cup 2026
+2026-06-29,Germany,home,1,1,draw,competitive,Paraguay,Germany,Paraguay,FIFA World Cup 2026
+2026-06-29,Paraguay,away,1,1,draw,competitive,Germany,Germany,Paraguay,FIFA World Cup 2026
+2026-06-29,Netherlands,home,1,1,draw,competitive,Morocco,Netherlands,Morocco,FIFA World Cup 2026
+2026-06-29,Morocco,away,1,1,draw,competitive,Netherlands,Netherlands,Morocco,FIFA World Cup 2026
+2026-06-29,Brazil,home,2,1,win,competitive,Japan,Brazil,Japan,FIFA World Cup 2026
+2026-06-29,Japan,away,1,2,loss,competitive,Brazil,Brazil,Japan,FIFA World Cup 2026
+2026-06-30,France,home,3,0,win,competitive,Sweden,France,Sweden,FIFA World Cup 2026
+2026-06-30,Sweden,away,0,3,loss,competitive,France,France,Sweden,FIFA World Cup 2026
+2026-06-30,Ivory Coast,home,1,2,loss,competitive,Norway,Ivory Coast,Norway,FIFA World Cup 2026
+2026-06-30,Norway,away,2,1,win,competitive,Ivory Coast,Ivory Coast,Norway,FIFA World Cup 2026
+2026-06-30,Mexico,home,2,0,win,competitive,Ecuador,Mexico,Ecuador,FIFA World Cup 2026
+2026-06-30,Ecuador,away,0,2,loss,competitive,Mexico,Mexico,Ecuador,FIFA World Cup 2026
+2026-07-01,England,home,2,1,win,competitive,DR Congo,England,DR Congo,FIFA World Cup 2026
+2026-07-01,DR Congo,away,1,2,loss,competitive,England,England,DR Congo,FIFA World Cup 2026
+2026-07-01,United States,home,2,0,win,competitive,Bosnia and Herzegovina,United States,Bosnia and Herzegovina,FIFA World Cup 2026
+2026-07-01,Bosnia and Herzegovina,away,0,2,loss,competitive,United States,United States,Bosnia and Herzegovina,FIFA World Cup 2026
+2026-07-01,Belgium,home,3,2,win,competitive,Senegal,Belgium,Senegal,FIFA World Cup 2026
+2026-07-01,Senegal,away,2,3,loss,competitive,Belgium,Belgium,Senegal,FIFA World Cup 2026
+2026-07-02,Portugal,home,2,1,win,competitive,Croatia,Portugal,Croatia,FIFA World Cup 2026
+2026-07-02,Croatia,away,1,2,loss,competitive,Portugal,Portugal,Croatia,FIFA World Cup 2026
+2026-07-02,Spain,home,3,0,win,competitive,Austria,Spain,Austria,FIFA World Cup 2026
+2026-07-02,Austria,away,0,3,loss,competitive,Spain,Spain,Austria,FIFA World Cup 2026
+2026-07-02,Switzerland,home,2,0,win,competitive,Algeria,Switzerland,Algeria,FIFA World Cup 2026
+2026-07-02,Algeria,away,0,2,loss,competitive,Switzerland,Switzerland,Algeria,FIFA World Cup 2026
+2026-07-03,Argentina,home,3,2,win,competitive,Cape Verde,Argentina,Cape Verde,FIFA World Cup 2026
+2026-07-03,Cape Verde,away,2,3,loss,competitive,Argentina,Argentina,Cape Verde,FIFA World Cup 2026
+2026-07-03,Colombia,home,1,0,win,competitive,Ghana,Colombia,Ghana,FIFA World Cup 2026
+2026-07-03,Ghana,away,0,1,loss,competitive,Colombia,Colombia,Ghana,FIFA World Cup 2026
+2026-07-03,Australia,home,1,1,draw,competitive,Egypt,Australia,Egypt,FIFA World Cup 2026
+2026-07-03,Egypt,away,1,1,draw,competitive,Australia,Australia,Egypt,FIFA World Cup 2026
