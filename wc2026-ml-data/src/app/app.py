@@ -193,13 +193,24 @@ def main():
                     pos_counts[t][pos] += 1
             group_data[g] = {t: [c / 5 for c in counts] for t, counts in pos_counts.items()}
 
+    # Load model metrics from metadata
+    meta_path = MODEL_DIR / "model_metadata.json"
+    if meta_path.exists():
+        import json
+        with open(meta_path) as f:
+            meta = json.load(f)
+        acc = meta.get("metrics", {}).get("accuracy", 0.51)
+        auc = meta.get("metrics", {}).get("roc_auc", 0.68)
+    else:
+        acc, auc = 0.51, 0.68
+
     tab1, tab2, tab3 = st.tabs([" Tournament Simulation", " Match Odds & Betting", " Virtual Betting"])
 
     # ============ TAB 1 ============
     with tab1:
         st.markdown(card(
             f"<span style='color:#9a9ac0'>{len(all_teams)} Teams  | 12 Groups  | "
-            f"Model: XGBoost (Accuracy 51%, ROC-AUC 0.68)</span>",
+            f"Model: XGBoost (Accuracy {acc*100:.0f}%, ROC-AUC {auc:.2f})</span>",
             extra="margin-bottom:20px"
         ), unsafe_allow_html=True)
 
