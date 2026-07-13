@@ -258,7 +258,7 @@ def main():
                     c = group_data[sel_g].get(t, [0, 0, 0, 0])
                     rows.append({"Team": t, "1st": f"{c[0]:.0f}%", "2nd": f"{c[1]:.0f}%",
                                  "3rd": f"{c[2]:.0f}%", "4th": f"{c[3]:.0f}%"})
-                st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+                st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 
         with col_r:
             st.markdown("<h3 style='color:#ffffff'> Route to the Final</h3>", unsafe_allow_html=True)
@@ -272,7 +272,7 @@ def main():
                              "SF": f"{r.get('SF',0)*100:.0f}%",
                              "Final": f"{r.get('Final',0)*100:.0f}%",
                              "Win": f"{r.get('Win',0)*100:.0f}%"})
-            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+            st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 
         st.divider()
         view = st.radio("Bracket view", ["Most Likely (Chalk)", "Random Simulation"],
@@ -463,7 +463,7 @@ def main():
                     Pick=b["pick"], Odds=f"{b['odds']:.2f}",
                     Stake=f"${b['stake']:.0f}", Payout=f"${b['payout']:.2f}"
                 ))
-            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+            st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 
             if st.button(" Settle All Bets", type="primary", use_container_width=True):
                 rng = np.random.default_rng(0)
@@ -510,7 +510,7 @@ def main():
                     Stake=f"${b['stake']:.0f}", Result=b["result"],
                     PnL=f"${b['pnl']:+,.0f}" if b["pnl"] != 0 else "$0"
                 ))
-            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+            st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 
             if st.button(" Reset Bets", use_container_width=True):
                 st.session_state.wallet = 10000.0

@@ -30,9 +30,9 @@
     "n_test_per_team": 2
   },
   "hosts": [
-    "Mexico",
+    "USA",
     "Canada",
-    "USA"
+    "Mexico"
   ],
   "aliases": {
     "USA": "United States",
