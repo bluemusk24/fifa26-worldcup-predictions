@@ -120,15 +120,44 @@ WC2026_RESULTS = [
     ("2026-06-27", "Croatia", 3, "Ghana", 2, "Group L"),
 ]
 
-# Round of 32 results (through June 30)
+# Round of 32 results (all 16 matches)
 R32_RESULTS = [
     ("2026-06-28", "South Africa", 0, "Canada", 1, "Round of 32"),
     ("2026-06-29", "Brazil", 2, "Japan", 1, "Round of 32"),
     ("2026-06-29", "Germany", 1, "Paraguay", 1, "Round of 32"),  # PAR won 4-3 on pens
     ("2026-06-29", "Netherlands", 1, "Morocco", 1, "Round of 32"),  # MAR won 3-2 on pens
-    ("2026-06-30", "Ivory Coast", 0, "Norway", 0, "Round of 32"),  # playing today
-    ("2026-06-30", "France", 0, "Sweden", 0, "Round of 32"),  # playing today
-    ("2026-06-30", "Mexico", 0, "Ecuador", 0, "Round of 32"),  # playing today
+    ("2026-06-30", "Ivory Coast", 1, "Norway", 2, "Round of 32"),
+    ("2026-06-30", "France", 3, "Sweden", 0, "Round of 32"),
+    ("2026-06-30", "Mexico", 2, "Ecuador", 0, "Round of 32"),
+    ("2026-07-01", "England", 2, "DR Congo", 1, "Round of 32"),
+    ("2026-07-01", "Belgium", 3, "Senegal", 2, "Round of 32"),  # AET
+    ("2026-07-01", "United States", 2, "Bosnia and Herzegovina", 0, "Round of 32"),
+    ("2026-07-02", "Spain", 3, "Austria", 0, "Round of 32"),
+    ("2026-07-02", "Portugal", 2, "Croatia", 1, "Round of 32"),
+    ("2026-07-02", "Switzerland", 2, "Algeria", 0, "Round of 32"),
+    ("2026-07-03", "Australia", 1, "Egypt", 1, "Round of 32"),  # AUS won 4-2 on pens
+    ("2026-07-03", "Argentina", 3, "Cape Verde", 2, "Round of 32"),  # AET
+    ("2026-07-03", "Colombia", 1, "Ghana", 0, "Round of 32"),
+]
+
+# Round of 16 results
+R16_RESULTS = [
+    ("2026-07-04", "Morocco", 3, "Canada", 0, "Round of 16"),
+    ("2026-07-04", "France", 1, "Paraguay", 0, "Round of 16"),
+    ("2026-07-04", "Norway", 2, "Brazil", 0, "Round of 16"),
+    ("2026-07-05", "England", 3, "Mexico", 2, "Round of 16"),
+    ("2026-07-05", "Spain", 1, "Portugal", 0, "Round of 16"),
+    ("2026-07-06", "Belgium", 4, "United States", 1, "Round of 16"),
+    ("2026-07-06", "Argentina", 3, "Egypt", 2, "Round of 16"),
+    ("2026-07-06", "Switzerland", 0, "Colombia", 0, "Round of 16"),  # SUI won 4-3 on pens
+]
+
+# Quarter-final results
+QF_RESULTS = [
+    ("2026-07-09", "France", 2, "Morocco", 0, "Quarter-final"),
+    ("2026-07-10", "Spain", 2, "Belgium", 1, "Quarter-final"),
+    ("2026-07-11", "England", 2, "Norway", 1, "Quarter-final"),  # AET
+    ("2026-07-12", "Argentina", 3, "Switzerland", 1, "Quarter-final"),  # AET
 ]
 
 
@@ -158,7 +187,7 @@ def update_elo_ratings():
     print(f"  Current Elo entries: {len(elo_df)}")
 
     wc_teams = set()
-    for date, h, hs, a, as_, group in WC2026_RESULTS + R32_RESULTS:
+    for date, h, hs, a, as_, group in WC2026_RESULTS + R32_RESULTS + R16_RESULTS + QF_RESULTS:
         wc_teams.add(canonical(h))
         wc_teams.add(canonical(a))
 
@@ -173,7 +202,7 @@ def update_elo_ratings():
 
     print(f"  WC teams to update: {len(wc_teams)}")
 
-    all_matches = WC2026_RESULTS + R32_RESULTS
+    all_matches = WC2026_RESULTS + R32_RESULTS + R16_RESULTS + QF_RESULTS
 
     for date, h, hs, a, as_, group in all_matches:
         h = canonical(h)
@@ -192,7 +221,7 @@ def update_elo_ratings():
         if team in wc_teams:
             new_rows.append({
                 "country": team,
-                "date": "2026-06-30",
+                "date": "2026-07-12",
                 "elo_rating": round(elo),
             })
 
@@ -215,7 +244,7 @@ def create_wc2026_training_csv():
     print("=" * 60)
 
     rows = []
-    for date, h, hs, a, as_, group in WC2026_RESULTS:
+    for date, h, hs, a, as_, group in WC2026_RESULTS + R32_RESULTS + R16_RESULTS + QF_RESULTS:
         h_canon = canonical(h)
         a_canon = canonical(a)
 

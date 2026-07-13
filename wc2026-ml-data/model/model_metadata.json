@@ -22,7 +22,7 @@
   "n_test_per_team": 2,
   "metrics": {
     "accuracy": 0.5833333333333334,
-    "roc_auc": 0.779188429227354,
+    "roc_auc": 0.7613272520393264,
     "n_train": 864,
     "n_test": 96,
     "n_games_per_team": 20,
@@ -31,8 +31,8 @@
   },
   "hosts": [
     "Mexico",
-    "USA",
-    "Canada"
+    "Canada",
+    "USA"
   ],
   "aliases": {
     "USA": "United States",

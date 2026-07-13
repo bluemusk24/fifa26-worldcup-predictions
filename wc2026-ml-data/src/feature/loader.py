@@ -256,7 +256,14 @@ def build_feature_view_data(
 def load_all_data(before_date: str = "2026-06-10") -> pd.DataFrame:
     print("Downloading recent match results...")
     results = download_recent_results(before_date)
-    print(f"  {len(results)} result rows")
+    print(f"  {len(results)} result rows from openfootball")
+    try:
+        from src.feature.include_wc2026 import merge_wc2026_results
+        print("Merging WC2026 actual results...")
+        results = merge_wc2026_results(results)
+        print(f"  {len(results)} total result rows after merge")
+    except ImportError:
+        print("  No WC2026 results to merge")
     print("Loading Elo ratings...")
     elo = load_elo_ratings()
     print(f"  {len(elo)} rows")

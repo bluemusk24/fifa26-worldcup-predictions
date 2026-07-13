@@ -16,6 +16,41 @@ CLASS_NAMES = ["loss", "draw", "win"]
 N_ROLLOUTS = 10000
 GROUPS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
+# Actual knockout results through QF (as of 2026-07-12)
+ACTUAL_BRACKET = {
+    # R32
+    "Match 73": ("Canada", "South Africa"),
+    "Match 74": ("Brazil", "Japan"),
+    "Match 75": ("Morocco", "Netherlands"),
+    "Match 76": ("Paraguay", "Germany"),
+    "Match 77": ("Norway", "Ivory Coast"),
+    "Match 78": ("France", "Sweden"),
+    "Match 79": ("Mexico", "Ecuador"),
+    "Match 80": ("England", "DR Congo"),
+    "Match 81": ("Belgium", "Senegal"),
+    "Match 82": ("United States", "Bosnia and Herzegovina"),
+    "Match 83": ("Croatia", "Portugal"),
+    "Match 84": ("Spain", "Austria"),
+    "Match 85": ("Switzerland", "Algeria"),
+    "Match 86": ("Argentina", "Cape Verde"),
+    "Match 87": ("Colombia", "Ghana"),
+    "Match 88": ("Egypt", "Australia"),
+    # R16
+    "Match 89": ("Morocco", "Canada"),
+    "Match 90": ("France", "Paraguay"),
+    "Match 91": ("Norway", "Brazil"),
+    "Match 92": ("England", "Mexico"),
+    "Match 93": ("Spain", "Portugal"),
+    "Match 94": ("Belgium", "United States"),
+    "Match 95": ("Argentina", "Egypt"),
+    "Match 96": ("Switzerland", "Colombia"),
+    # QF
+    "Match 97": ("France", "Morocco"),
+    "Match 98": ("Spain", "Belgium"),
+    "Match 99": ("England", "Norway"),
+    "Match 100": ("Argentina", "Switzerland"),
+}
+
 
 def load_model():
     p = Path(__file__).resolve().parents[1] / "model" / "wc2026_match_predictor.joblib"
@@ -25,7 +60,7 @@ def load_model():
 def get_ratings():
     elo = load_elo_ratings()
     fifa = load_fifa_ratings()
-    as_of = "2026-07-08"
+    as_of = "2026-07-12"
     elo_latest = elo[elo["date"] <= as_of].sort_values("date").groupby("country").last().reset_index()
     fifa_latest = fifa[fifa["date"] <= as_of].sort_values("date").groupby("country").last().reset_index()
     elo_map = {}
@@ -190,6 +225,10 @@ def simulate_once(group_teams, gfixtures, kf, proba_table, rng):
 
     ko_results = {}
     for km in kf:
+        mid = km["match"]
+        if mid in ACTUAL_BRACKET:
+            ko_results[mid] = ACTUAL_BRACKET[mid]
+            continue
         def _resolve(slot, ko_res=ko_results, gr=gres, tr=third_ranked, bt=best_thirds):
             s = slot.strip()
             m = re.match(r"Group ([A-L]) (winners|runners[- ]up)", s)
@@ -219,10 +258,11 @@ def simulate_once(group_teams, gfixtures, kf, proba_table, rng):
             ko_results[km["match"]] = (winner, loser)
 
     champ = "?"
-    for mid in ["Match 104", "Match 101", "Match 102"]:
-        if mid in ko_results:
-            champ = ko_results[mid][0]
-    if champ == "?" and ko_results:
+    if "Match 104" in ACTUAL_BRACKET:
+        champ = ACTUAL_BRACKET["Match 104"][0]
+    elif "Match 104" in ko_results:
+        champ = ko_results["Match 104"][0]
+    elif ko_results:
         champ = list(ko_results.values())[-1][0]
 
     return gres, ko_results, champ, best_thirds

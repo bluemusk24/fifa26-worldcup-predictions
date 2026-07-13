@@ -18,11 +18,29 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from src.predictor import (
     load_model, get_ratings, get_schedule, parse_schedule,
-    predict_proba, simulate_once,
+    predict_proba, simulate_once, ACTUAL_BRACKET,
     CLASS_NAMES, GROUPS,
 )
 
 MODEL_DIR = Path(__file__).resolve().parents[2] / "model"
+
+# Actual QF results for display
+ACTUAL_KO = {
+    "Match 73": ("Canada", "South Africa"), "Match 74": ("Brazil", "Japan"),
+    "Match 75": ("Morocco", "Netherlands"), "Match 76": ("Paraguay", "Germany"),
+    "Match 77": ("Norway", "Ivory Coast"), "Match 78": ("France", "Sweden"),
+    "Match 79": ("Mexico", "Ecuador"), "Match 80": ("England", "DR Congo"),
+    "Match 81": ("Belgium", "Senegal"), "Match 82": ("United States", "Bosnia and Herzegovina"),
+    "Match 83": ("Croatia", "Portugal"), "Match 84": ("Spain", "Austria"),
+    "Match 85": ("Switzerland", "Algeria"), "Match 86": ("Argentina", "Cape Verde"),
+    "Match 87": ("Colombia", "Ghana"), "Match 88": ("Egypt", "Australia"),
+    "Match 89": ("Morocco", "Canada"), "Match 90": ("France", "Paraguay"),
+    "Match 91": ("Norway", "Brazil"), "Match 92": ("England", "Mexico"),
+    "Match 93": ("Spain", "Portugal"), "Match 94": ("Belgium", "United States"),
+    "Match 95": ("Argentina", "Egypt"), "Match 96": ("Switzerland", "Colombia"),
+    "Match 97": ("France", "Morocco"), "Match 98": ("Spain", "Belgium"),
+    "Match 99": ("England", "Norway"), "Match 100": ("Argentina", "Switzerland"),
+}
 
 st.set_page_config(page_title="FIFA WC 2026 Predictor", layout="wide", page_icon="")
 
@@ -266,13 +284,23 @@ def main():
                 gres, ko_res, champ, _ = simulate_once(group_teams, gfixtures, kf, proba_table, rng)
                 st.session_state["chalk"] = (ko_res, champ)
             ko_res, champ = st.session_state["chalk"]
-            title = f"Most-Likely Bracket \u2014 \u2605 {champ} Champion"
+            merged_ko = dict(ACTUAL_KO)
+            merged_ko.update(ko_res)
+            ko_res = merged_ko
+            if "Match 104" in ACTUAL_KO:
+                champ = ACTUAL_KO["Match 104"][0]
+            title = f"Tournament Bracket \u2014 \u2605 {champ} Champion"
         else:
             key = "rseed"
             if key not in st.session_state:
                 st.session_state[key] = np.random.default_rng().integers(0, 100000)
             _, ko_res, champ, _ = simulate_once(group_teams, gfixtures, kf, proba_table,
                                                 np.random.default_rng(st.session_state[key]))
+            merged_ko = dict(ACTUAL_KO)
+            merged_ko.update(ko_res)
+            ko_res = merged_ko
+            if "Match 104" in ACTUAL_KO:
+                champ = ACTUAL_KO["Match 104"][0]
             title = f"Random Simulation \u2014 \u2605 {champ} Champion"
 
         fig = draw_bracket(ko_res, champ, group_teams, title)
