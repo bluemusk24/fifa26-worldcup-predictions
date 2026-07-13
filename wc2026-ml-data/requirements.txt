@@ -1,6 +1,6 @@
 xgboost
 scikit-learn
-numpy
+numpy<2.0
 joblib
 pandas<3.0
 matplotlib
